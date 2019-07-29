@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Affiche un potin</title>
+  </head>
+  <body>
+  <h1>PAGE POTIN</h1>
+    <h2>Voici le Gossip n° <%= index %></h2>
+      <p>
+      <U>Auteur</U> : <%= gossips.author %><br/>
+      <U>Contenu du potin</U> : <%= gossips.content %>
+      </p><br/>
+      <a href='/gossips/<%= index %>/edit'>Modifier le gossip</a>
+
+      <h2> Ajouter un nouveau commentaire </h2>
+      <form action='/gossips/<%= index %>' method='POST'>
+      Saisi ici ton commentaire :  <input type='text' name='gossip_comment'/><br/>
+      <input type='submit'/>
+
+
+      <hr>
+      <% gossips.comment.split(",").map do |gossip| if gossip!="" %>
+        <p>
+          <%=user%> : <%= gossip %><br/>
+          <hr>
+          
+        </p>
+      <% end %>
+      <% end %>
+
+
+
+    </body>
+</html>
