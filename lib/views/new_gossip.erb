@@ -30,7 +30,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">GossipBook</a>
+      <a class="navbar-brand js-scroll-trigger" href="http://localhost:4567">GossipBook</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -56,55 +56,28 @@
         <div class="container">
         <h2 class="text-center mt-0">Crée un Gossip</h2>
         <hr class="divider my-4">
-        <div class="row">
-  
-          <h2> Balance ton potin via le formulaire ci-dessous </h2>
-        </div>
+         <div class="container">
+        <h2 class="text-center mt-0">Balance ton Gossip via le formulaire ci-dessous </h2>
+         
+        </div><br/>
         <div class="container text-center">
           <form action='/gossips/new/' method='POST'>
-          Saisi ici ton nom :   <input type='text' name='gossip_author'/><br/>
-          Balance ton potin : <input type='text' name='gossip_content'/><br/>
-          <input type='submit'/>
+          Saisi ton pseudo : <br/><br/> <input type='text' name='gossip_author'/><br/><br/>
+          Balance ton Gossip :<br/><br/> <textarea type='text' name='gossip_content' style="width:400px" rows="4" cols="50"></textarea><br/><br/>
+          <input type='submit' value="Envoyer le Gossip vers une nouvelle dimension"/>
           </form>
         </div>
         
         </div>
 
-
-
-
-
         </div>
         <div class="col-lg-8 align-self-baseline">
           <p class="text-white-75 font-weight-light mb-5"></p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          
         </div>
       </div>
     </div>
   </header>
-
-
-
-  <!-- Services Section -->
-  <section class="page-section" id="services">
-    <div class="container">
-      <h2 class="text-center mt-0"><a href="/gossips/new/">Crée un Gossip</a></h2>
-      <hr class="divider my-4">
-      <div class="row">
-
-        <h2> Balance ton potin via le formulaire ci-dessous </h2>
-      </div>
-      <div class="container">
-        <form action='/gossips/new/' method='POST'>
-        Saisi ici ton nom :  <input type='text' name='gossip_author'/><br/>
-        Balance ton potin : <input type='text' name='gossip_content'/><br/>
-        <input type='submit'/>
-        </form>
-      </div>
-      
-    </div>
-  </section>
-
 
 
   <!-- Footer -->
